@@ -1,0 +1,6 @@
+# ignore 
+/data/latent/ffhq
+__pycache__/
+/.vscode/
+/logs/
+/first_stage_model
