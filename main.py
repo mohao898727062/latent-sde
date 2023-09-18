@@ -603,12 +603,16 @@ if __name__ == "__main__":
 
     
         #Win10 unsoport signal and NCCL
-        ##################################################
+        ################################################## run on linux
         # import signal
         # signal.signal(signal.SIGUSR1, melk)
         # signal.signal(signal.SIGUSR2, divein)
+        ##################################################
+
+        ################################################## run on windows
         os.environ["PL_TORCH_DISTRIBUTED_BACKEND"] = "gloo"
         ##################################################
+
         # run
         if opt.train:
             try:
